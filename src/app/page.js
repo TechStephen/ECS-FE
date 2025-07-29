@@ -5,9 +5,11 @@ export default function Home() {
   const [msItem, setMsItem] = useState(null);
 
   const runMicroservice = async () => {
-    const response = await fetch('http://my-microservice.services.local')
-    console.log(response)
-  }
+    const response = await fetch('/api/microservice');
+    console.log('Response:', response);
+    const item = await response.json();
+    setMsItem(item);
+  };
 
   return (
     <div className="text-center p-4 pt-12">
