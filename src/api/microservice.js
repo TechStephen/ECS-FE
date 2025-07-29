@@ -1,5 +1,3 @@
-// pages/api/microservice.js
-
 export default async function handler(req, res) {
     try {
       const response = await fetch('http://my-microservice.services.local');
