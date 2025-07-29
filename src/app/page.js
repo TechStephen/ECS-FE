@@ -13,11 +13,11 @@ export default function Home() {
 
   return (
     <div className="text-center p-4 pt-12">
-      {msItem ? ( <span className='p-8 border border-[1px] border-red-500 border-solid'>item: {msItem}</span>) : (<span className='border border-[1px] border-red-500 border-solid p-8'>Not Loaded</span>)}
+      {msItem ? ( <span className='p-8 border border-red-500 border-solid'>item: {msItem}</span>) : (<span className='border border-red-500 border-solid p-8'>Not Loaded</span>)}
       <br/>
       <div className='flex flex-row justify-center items-center gap-6 pt-12'>
         <h1>ECS Microservice App</h1>
-        <button onClick={() => runMicroservice()} className='border border-[1px] border-black border-solid p-2'>Activate Microservice</button>
+        <button onClick={() => runMicroservice()} className='border border-black border-solid p-2'>Activate Microservice</button>
       </div>
     </div>
   );
