@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 export default function Home() {
   const [msItem, setMsItem] = useState(null);
 
-  const runMicroservice = () => {
-    console.log('ran')
+  const runMicroservice = async () => {
+    const response = await fetch('http://my-microservice.services.local')
+    console.log(response)
   }
 
   return (
