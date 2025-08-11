@@ -8,7 +8,7 @@ TAG="latest"
 
 # Build Docker image
 echo "🔨 Building Docker image..."
-docker build -t ${IMAGE} .
+docker build --platform linux/amd64 -t ${IMAGE} .
 
 # Tag the image for ECR
 echo "🏷 Tagging Docker image..."

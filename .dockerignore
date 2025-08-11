@@ -1,0 +1,33 @@
+# Local env files (don't bake secrets into the image)
+.env
+.env*.local
+
+# Next.js build output
+.next
+out
+
+# OS-specific cruft
+.DS_Store
+Thumbs.db
+
+# Editor configs & caches
+.vscode
+.idea
+*.swp
+
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# Test & storybook
+__tests__
+*.test.js
+*.test.ts
+*.test.tsx
+storybook-static
+.storybook
+
+# Logs
+logs
+*.log
